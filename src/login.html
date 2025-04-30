@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-In</title>
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+  <body>
+    <div class="navbar shadow-sm lg:px-40 p-3 sm:pl-9 bg-mintOk space-x-10">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="text-gray-900 pr-10 lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-md dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li>
+              <div class="dropdown dropdown-hover">
+                <div tabindex="0" role="button" class="m-1">
+                  <summary
+                    class="flex items-center gap-2 cursor-pointer list-none dropdown dropdown-hover"
+                  >
+                    <span
+                      class="text-xl font-medium font-mainm dropdown dropdown-hover"
+                      >Addiction</span
+                    >
+                  </summary>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="dropdown-content menu bg-gray-900 text-white rounded-box z-1 w-52 p-2 shadow-sm"
+                >
+                  <li>
+                    <span class="font-semibold block">Find Treatment By:</span>
+                  </li>
+                  <li>
+                    <a href="#" class="block hover:underline">United States</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block hover:underline"
+                      >Amenities and Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block hover:underline">Levels of Care</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block hover:underline">Insurance</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown dropdown-hover">
+                <div tabindex="0" role="button" class="m-1">
+                  <summary
+                    class="flex items-center gap-2 cursor-pointer list-none dropdown dropdown-hover"
+                  >
+                    <span
+                      class="text-xl font-medium font-mainm dropdown dropdown-hover"
+                      >Mental Health
+                    </span>
+                  </summary>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="dropdown-content menu bg-gray-900 text-white rounded-box z-1 w-52 p-2 shadow-sm"
+                >
+                  <li>
+                    <span class="font-semibold block">Find Treatment By:</span>
+                  </li>
+                  <li>
+                    <a href="#" class="block hover:underline">United States</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block hover:underline"
+                      >Amenities and Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block hover:underline">Levels of Care</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block hover:underline">Insurance</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown dropdown-hover">
+                <div tabindex="0" role="button" class="m-1">
+                  <summary
+                    class="flex items-center gap-2 cursor-pointer list-none dropdown dropdown-hover"
+                  >
+                    <span
+                      class="text-xl font-medium font-mainm dropdown dropdown-hover"
+                      >About Us</span
+                    >
+                  </summary>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="dropdown-content menu bg-gray-900 text-white rounded-box z-1 w-52 p-2 shadow-sm"
+                >
+                  <li>
+                    <span class="font-semibold block">Find Treatment By:</span>
+                  </li>
+                  <li>
+                    <a href="#" class="block hover:underline">United States</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block hover:underline"
+                      >Amenities and Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block hover:underline">Levels of Care</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block hover:underline">Insurance</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="flex">
+          <div class="logo w-8.5 mt-0.5 mr-2">
+            <img src="images/green-logo.png" class="" />
+          </div>
+          <a class="text-3xl font-bold bg-mintOk font-display text-gray-900"
+            >Recovery.com</a
+          >
+        </div>
+        <div class="">
+          <label class="swap swap-rotate lg:hidden pl-15">
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" />
+
+            <!-- sun icon -->
+            <svg
+              class="swap-on h-10 w-10 text-gray-900 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
+              />
+            </svg>
+
+            <!-- moon icon -->
+            <svg
+              class="swap-off h-10 w-10 text-gray-900 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
+              />
+            </svg>
+          </label>
+        </div>
+      </div>
+      <div class="navbar-center hidden lg:flex text-gray-900">
+        <ul
+          class="flex flex-row font-medium font-mainm rounded px-1 pl-10 text-xl space-x-15"
+        >
+          <!-- Addiction Dropdown -->
+          <li>
+            <div class="dropdown dropdown-hover">
+              <div tabindex="0" role="button" class="m-1">
+                <summary
+                  class="flex items-center gap-2 cursor-pointer list-none dropdown dropdown-hover"
+                >
+                  <span
+                    class="text-xl font-medium font-mainm dropdown dropdown-hover"
+                    >Addiction</span
+                  >
+                </summary>
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content menu bg-gray-900 text-white rounded-box z-1 w-52 p-2 shadow-sm"
+              >
+                <li>
+                  <span class="font-semibold block">Find Treatment By:</span>
+                </li>
+                <li>
+                  <a href="#" class="block hover:underline">United States</a>
+                </li>
+                <li>
+                  <a href="#" class="block hover:underline"
+                    >Amenities and Settings</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block hover:underline">Levels of Care</a>
+                </li>
+                <li><a href="#" class="block hover:underline">Insurance</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Mental Health Dropdown -->
+          <li>
+            <div class="dropdown dropdown-hover">
+              <div tabindex="0" role="button" class="m-1">
+                <summary
+                  class="flex items-center gap-2 cursor-pointer list-none dropdown dropdown-hover"
+                >
+                  <span
+                    class="text-xl font-medium font-mainm dropdown dropdown-hover"
+                    >Mental Health
+                  </span>
+                </summary>
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content menu bg-gray-900 text-white rounded-box z-1 w-52 p-2 shadow-sm"
+              >
+                <li>
+                  <span class="font-semibold block">Find Treatment By:</span>
+                </li>
+                <li>
+                  <a href="#" class="block hover:underline">United States</a>
+                </li>
+                <li>
+                  <a href="#" class="block hover:underline"
+                    >Amenities and Settings</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block hover:underline">Levels of Care</a>
+                </li>
+                <li><a href="#" class="block hover:underline">Insurance</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- About Us Dropdown -->
+          <li>
+            <div class="dropdown dropdown-hover">
+              <div tabindex="0" role="button" class="m-1">
+                <summary
+                  class="flex items-center gap-2 cursor-pointer list-none dropdown dropdown-hover"
+                >
+                  <span
+                    class="text-xl font-medium font-mainm dropdown dropdown-hover"
+                    >About Us</span
+                  >
+                </summary>
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content menu bg-gray-900 text-white rounded-box z-1 w-52 p-2 shadow-sm"
+              >
+                <li>
+                  <span class="font-semibold block">Find Treatment By:</span>
+                </li>
+                <li>
+                  <a href="#" class="block hover:underline">United States</a>
+                </li>
+                <li>
+                  <a href="#" class="block hover:underline"
+                    >Amenities and Settings</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block hover:underline">Levels of Care</a>
+                </li>
+                <li><a href="#" class="block hover:underline">Insurance</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <div class="">
+          <label class="swap swap-rotate lg:hidden">
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" />
+
+            <!-- sun icon -->
+            <svg
+              class="swap-on h-10 w-10 text-gray-900 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
+              />
+            </svg>
+
+            <!-- moon icon -->
+            <svg
+              class="swap-off h-10 w-10 text-gray-900 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
+              />
+            </svg>
+          </label>
+        </div>
+        <div class="pr-1">
+          <a
+            href="/src/loginok.html"
+            class="btn bg-grayOk text-xl hidden font-medium px-5 py-5 font-mainok rounded-full"
+            >Log-In</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="hero bg-mintOk flex lg:flex-row sm:flex-col-reverse space-x-4 lg:px-40 lg:py-5 justify-center"
+    >
+      <div class="">
+        <h1
+          class="lg:text-6xl lg:px-0 lg:pr-2 lg:pb-6 sm:text-3xl sm:text-center lg:text-left sm:px-5 sm:pt-4 font-bold font-display text-gray-900"
+        >
+          Drug and Alcohol Rehabs in United States
+        </h1>
+        <p
+          class="font-mainok lg:text-xl lg:pb-8 lg:px-0 lg:pr-20 text-gray-900 text-justify sm:px-10 sm:py-5"
+        >
+          The best rehab is one that meets your needs. Our research team
+          evaluated 16759 alcohol and drug rehabs in United States. Review our
+          curated list of rehab centers providing detox, residential, and
+          outpatient treatment. Insurance covers rehab for addiction, making
+          recovery more accessible and affordable.
+        </p>
+      </div>
+      <div
+        class="hero-content pt-6 flex-col lg:flex-row-reverse lg:p-0 sm:px-10"
+      >
+        <img
+          id="scalingImage"
+          src="./images/img1.jpeg"
+          class="lg:w-400 sm:w-180 md:w-200 rounded-lg shadow-2xl"
+        />
+      </div>
+    </div>
+    <div class="justify-center flex items-center text-gray-900">
+      <!-- Main Card -->
+      <div class="main-section font-mainm bg-mintOk py-6 px-4">
+        <div class="container mx-auto lg:px-18 sm:px-7">
+          <div
+            class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden"
+          >
+            <!-- Image Slider -->
+            <div class="relative p-5">
+              <div
+                id="imageSlider2"
+                class="flex overflow-x-auto scroll-smooth space-x-4 p-3 scroll-container rounded-lg"
+              >
+                <img
+                  src="images/bliss1/1.webp"
+                  class="w-64 h-40 object-cover rounded-md flex-shrink-0"
+                />
+                <img
+                  src="images/bliss1/2.webp"
+                  class="w-64 h-40 object-cover rounded-md flex-shrink-0"
+                />
+                <img
+                  src="images/bliss1/3.webp"
+                  class="w-64 h-40 object-cover rounded-md flex-shrink-0"
+                />
+                <img
+                  src="images/bliss1/4.webp"
+                  class="w-64 h-40 object-cover rounded-md flex-shrink-0"
+                />
+                <img
+                  src="images/bliss1/5.webp"
+                  class="w-64 h-40 object-cover rounded-md flex-shrink-0"
+                />
+                <img
+                  src="images/bliss1/6.webp"
+                  class="w-64 h-40 object-cover rounded-md flex-shrink-0"
+                />
+                <img
+                  src="images/bliss1/7.webp"
+                  class="w-64 h-40 object-cover rounded-md flex-shrink-0"
+                />
+                <img
+                  src="images/bliss1/8.webp"
+                  class="w-64 h-40 object-cover rounded-md flex-shrink-0"
+                />
+              </div>
+
+              <!-- Residential Badge -->
+              <div
+                class="absolute top-10 left-10 bg-grayOk text-mintOk text-xs font-semibold px-2 py-1 scrollbar-hide rounded shadow"
+              >
+                Residential
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="lg:px-5 lg:pb-8 sm:px-0 sm:pb-0 space-y-3">
+              <p class="text-sm ml-3 text-gray-500">
+                San Juan Capistrano, California, United States
+              </p>
+              <h2 class="text-2xl ml-3 font-bold flex items-center gap-2">
+                Capo Canyon
+                <i class="fa-solid fa-circle-check text-blue-500"></i>
+              </h2>
+
+              <!-- ⭐ DaisyUI Star Rating -->
+              <div class="rating rating-lg">
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="rating-hidden"
+                  aria-label="clear"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="mask mask-star-2 bg-amber-300"
+                  aria-label="1 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="mask mask-star-2 bg-amber-300"
+                  aria-label="2 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="mask mask-star-2 bg-amber-300"
+                  aria-label="3 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="mask mask-star-2 bg-amber-300"
+                  aria-label="4 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="mask mask-star-2 bg-amber-300"
+                  aria-label="5 star"
+                />
+              </div>
+
+              <!-- Pills -->
+              <div class="flex sm:pl-3 lg:ml-3 flex-wrap gap-2 text-sm">
+                <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full"
+                  >Joint Commission Accredited</span
+                >
+                <span
+                  class="bg-green-100 text-green-700 px-2 py-1 rounded-full flex items-center gap-1"
+                >
+                  <i class="fa-solid fa-shield-check"></i> Insurance Accepted
+                </span>
+              </div>
+
+              <!-- Tags -->
+              <div
+                class="flex lg:ml-3 sm:pl-3 flex-wrap gap-2 mt-2 text-sm text-gray-700"
+              >
+                <span class="bg-gray-100 px-2 py-1 rounded-full"
+                  >Substance Use</span
+                >
+                <span class="bg-gray-100 px-2 py-1 rounded-full"
+                  >Co-Occurring Mental Health</span
+                >
+                <span class="bg-gray-100 px-2 py-1 rounded-full">Alcohol</span>
+                <span class="bg-gray-100 px-2 py-1 rounded-full">Anxiety</span>
+                <span class="bg-gray-100 px-2 py-1 rounded-full"
+                  >Depression</span
+                >
+                <span class="bg-gray-100 px-2 py-1 rounded-full"
+                  >Executives</span
+                >
+                <span class="bg-gray-100 px-2 py-1 rounded-full"
+                  >Flexible technology policies</span
+                >
+              </div>
+
+              <!-- Description -->
+              <p
+                class="text-gray-900 sm:ml-3 text-sm text-justify sm:pr-10 ml-4"
+              >
+                Capo Canyon is a private, luxury rehab designed with executives
+                and professionals in mind. This center does not accept Medicaid
+                and Medicare...
+              </p>
+
+              <!-- Features -->
+              <div class="flex ml-3 flex-wrap gap-4 mt-3 text-sm text-gray-900">
+                <span
+                  ><i class="fa-solid fa-briefcase mr-1"></i>Perfect for
+                  Professionals</span
+                >
+                <span
+                  ><i class="fa-solid fa-bed mr-1"></i>Private Rooms Only</span
+                >
+                <span
+                  ><i class="fa-solid fa-laptop mr-1"></i>Tech Friendly</span
+                >
+              </div>
+
+              <!-- Actions -->
+              <div class="lg:mt-4 sm:ml-3 sm:mb-3 lg:ml-3 flex gap-3">
+                <button
+                  class="bg-purpo hover:bg- text-gray-900 px-7 py-2 rounded-full font-medium"
+                >
+                  View
+                </button>
+                <button
+                  class="border border-gray-300 hover:bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium"
+                >
+                  Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-[1200px] font-mainm mx-auto px-5">
+      <section class="text-center py-10">
+        <h2 class="text-gray-900 mb-10 text-4xl font-bold">Learn More</h2>
+        <ul
+          class="rounded-xl overflow-hidden bg-white border text-xl border-gray-200 text-left"
+        >
+          <li>
+            <a
+              href="#"
+              class="flex justify-between items-center px-5 py-4 hover:bg-gray-100 text-[#1d2b49] font-medium"
+              ><span class="flex items-center gap-3"
+                ><i
+                  class="fa fa-link bg-[#f2f2fc] text-[#4c4eaa] p-2 rounded-full text-sm"
+                ></i
+                >How to Get Into Rehab Immediately</span
+              ><span class="text-[#999] text-lg">&#8250;</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex justify-between items-center px-5 py-4 hover:bg-gray-100 text-[#1d2b49] font-medium"
+              ><span class="flex items-center gap-3"
+                ><i
+                  class="fa fa-link bg-[#f2f2fc] text-[#4c4eaa] p-2 rounded-full text-sm"
+                ></i
+                >How to Pay for Drug and Alcohol Rehab</span
+              ><span class="text-[#999] text-lg">&#8250;</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex justify-between items-center px-5 py-4 hover:bg-gray-100 text-[#1d2b49] font-medium"
+              ><span class="flex items-center gap-3"
+                ><i
+                  class="fa fa-link bg-[#f2f2fc] text-[#4c4eaa] p-2 rounded-full text-sm"
+                ></i
+                >How Do I Know If I Have a Drug Problem</span
+              ><span class="text-[#999] text-lg">&#8250;</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex justify-between items-center px-5 py-4 hover:bg-gray-100 text-[#1d2b49] font-medium"
+              ><span class="flex items-center gap-3"
+                ><i
+                  class="fa fa-link bg-[#f2f2fc] text-[#4c4eaa] p-2 rounded-full text-sm"
+                ></i
+                >Is Alcohol Considered a Drug?</span
+              ><span class="text-[#999] text-lg">&#8250;</span></a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="text-center py-5">
+        <h2 class="text-4xl text-gray-900 font-bold mb-10">
+          Explore Top Treatment Destinations
+        </h2>
+        <p
+          class="text-[#667199] text-xl max-w-[700px] mx-auto mb-10 font-[Figtree]"
+        >
+          Residential rehab offers you or your loved one the opportunity to
+          start anew in a setting tailored to your needs. With a variety of
+          available options, one is sure to be perfect for you.
+        </p>
+        <div class="flex flex-wrap justify-center gap-30 text-left">
+          <div class="w-full sm:w-[280px] max-w-[320px]">
+            <div
+              class="relative rounded-xl overflow-hidden h-[180px] bg-cover bg-center mb-2"
+              style="background-image: url('images/main-img/2.jpeg')"
+            >
+              <i
+                class="fa fa-play-circle text-white text-[36px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 drop-shadow-md"
+              ></i>
+            </div>
+            <h3 class="text-xl font-bold text-center text-gray-900 mb-1">
+              Arizona
+            </h3>
+            <p class="text-[14px] text-center text-[#444]">
+              Enjoy beautiful natural scenery and treatment from experienced
+              providers.
+            </p>
+          </div>
+          <div class="w-full sm:w-[280px] max-w-[320px] pb-15">
+            <div
+              class="relative rounded-xl overflow-hidden h-[180px] bg-cover bg-center mb-2"
+              style="background-image: url('images/main-img/1.jpeg')"
+            >
+              <i
+                class="fa fa-play-circle text-white text-[36px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 drop-shadow-md"
+              ></i>
+            </div>
+            <h3 class="text-xl text-center font-bold text-gray-900 mb-1">
+              Colorado
+            </h3>
+            <p class="text-sm text-center text-[#444]">
+              Experience quality treatment with awe-inspiring views in naturally
+              beautiful settings.
+            </p>
+          </div>
+          <div class="w-full sm:w-[280px] max-w-[320px]">
+            <div
+              class="relative rounded-xl overflow-hidden h-[180px] bg-cover bg-center mb-2"
+              style="background-image: url('images/main-img/3.jpeg')"
+            >
+              <i
+                class="fa fa-play-circle text-white text-[36px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 drop-shadow-md"
+              ></i>
+            </div>
+            <h3 class="text-xl font-bold text-center text-gray-900 mb-1">
+              Florida
+            </h3>
+            <p class="text-sm text-center text-gray-900">
+              Sunshine, beaches, and warm climate attract clients seeking
+              treatment through wellness and rejuvenation.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+      class="max-w-2xl mb-20 mx-auto mt-16 p-6 bg-white rounded-lg shadow-md"
+    >
+      <h2 class="text-4xl font-semibold mb-4 ml-1 text-gray-700">Feedback</h2>
+
+      <form class="space-y-4">
+        <!-- Name -->
+        <div>
+          <label
+            for="name"
+            class="block text-sm font-medium ml-4 mb-0.5 text-gray-700"
+            >Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            class="mt-1 w-full px-4 py-2 border text-gray-900 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600"
+          />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label
+            for="email"
+            class="block text-sm font-medium ml-4 mb-0.5 text-gray-700"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            class="mt-1 w-full px-4 py-2 border text-gray-900 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600"
+          />
+        </div>
+
+        <!-- Feedback -->
+        <div>
+          <label
+            for="message"
+            class="block text-sm font-medium ml-4 mb-0.5 text-gray-700"
+            >Your Feedback</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Write your feedback here..."
+            class="mt-1 w-full px-4 py-2 border text-gray-900 border-gray-300 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-gray-600"
+          ></textarea>
+        </div>
+
+        <!-- Rating -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-4 ml-2"
+            >How would you rate us?</label
+          >
+          <div class="rating rating-lg mr-2">
+            <input
+              type="radio"
+              name="rating-10"
+              class="rating-hidden"
+              aria-label="clear"
+            />
+            <input
+              type="radio"
+              name="rating-10"
+              class="mask mask-star-2 bg-amber-300"
+              aria-label="1 star"
+            />
+            <input
+              type="radio"
+              name="rating-10"
+              class="mask mask-star-2 bg-amber-300"
+              aria-label="2 star"
+              checked="checked"
+            />
+            <input
+              type="radio"
+              name="rating-10"
+              class="mask mask-star-2 bg-amber-300"
+              aria-label="3 star"
+            />
+            <input
+              type="radio"
+              name="rating-10"
+              class="mask mask-star-2 bg-amber-300"
+              aria-label="4 star"
+            />
+            <input
+              type="radio"
+              name="rating-10"
+              class="mask mask-star-2 bg-amber-300"
+              aria-label="5 star"
+            />
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <div>
+          <button
+            type="submit"
+            class="w-full btn bg-gray-800 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition duration-200"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="flex border border-black h-2">
+      <div class="w-[16.67%] h-full bg-red-100 border-r border-black"></div>
+      <div class="w-[16.67%] h-full bg-blue-100 border-r border-black"></div>
+      <div class="w-[16.67%] h-full bg-green-100 border-r border-black"></div>
+      <div class="w-[16.67%] h-full bg-gray-100 border-r border-black"></div>
+      <div class="w-[16.67%] h-full bg-purple-100 border-r border-black"></div>
+      <div class="w-[16.67%] h-full bg-yellow-100"></div>
+    </div>
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
+        >
+          <!-- Column 1 -->
+          <div class="footer-column">
+            <h4 class="text-lg font-semibold mb-4">Not Sure Where to Go?</h4>
+            <ul>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Rehabs in Florida</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Rehabs in California</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Rehabs in New York</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Rehabs in Texas</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Rehabs in Arizona</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="footer-column">
+            <h4 class="text-lg font-semibold mb-4">Popular Centers</h4>
+            <ul>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Luxury Rehab Centers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Detox Centers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Cognitive Behavioral Therapy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Sober Living Homes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >LGBTQ+ Friendly Rehabs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Wellness Centers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Pet Friendly Rehabs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Rehabs that Allow Cell Phones</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="footer-column">
+            <h4 class="text-lg font-semibold mb-4">Top Specializations</h4>
+            <ul>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Eating Disorder Treatment</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Depression Treatment</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Executive Rehab</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Teen Rehab Centers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Dual Diagnosis Rehabs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Residential Trauma Treatment</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Sex Addiction Treatment</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Christian Treatment Centers</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4 -->
+          <div class="footer-column">
+            <h4 class="text-lg font-semibold mb-4">Top Resources</h4>
+            <ul>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Can I Get Fired for Going to Rehab?</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Is Rehab Covered by Insurance?</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Tips for Staging an Intervention</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >How Much Does Rehab Cost?</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- For Treatment Providers -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-8">
+          <!-- Social Icons -->
+          <div class="social-icons flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom flex justify-between items-center">
+          <div
+            class="footer-logo font-semibold flex font-display text-3xl items-center"
+          >
+            Recovery.com
+          </div>
+          <div class="footer-links text-sm text-gray-400">
+            © 2017–2025
+            <a href="#" class="hover:text-white">RehabPath Inc</a>
+            <span> · </span> <a href="#" class="hover:text-white">Careers</a>
+            <span> · </span> <a href="#" class="hover:text-white">News</a>
+            <span> · </span>
+            <a href="#" class="hover:text-white">Privacy Policy</a>
+            <span> · </span>
+            <a href="#" class="hover:text-white">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

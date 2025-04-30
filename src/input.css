@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@import url(/Fields-Font/regular.otf);
+@tailwind utilities;
+@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
+@theme {
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1440px;
+  --color-mintOk: #e4f2f2;
+  --color-grayOk: #31344c;
+  --color-yellowOk: #f7f3ef;
+  --color-purpo: #e6e4ff;
+  --font-display: "regular", "sans-serif";
+  --font-mainok: "Figtree", "sans-serif";
+  --font-mainm: "Figtreeok", "sans-serif";
+}
+@font-face {
+  font-family: regular;
+  src: url("/Fields-Font/regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Figtree;
+  src: url("/Figtree/static/Figtree-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Figtreeok;
+  src: url("/Figtree/static/Figtree-Medium.ttf");
+  font-weight: 400;
+}
+body {
+  background-image: url("/images/bg-cool.png");
+  background-size: cover;
+  background-position: center;
+  @apply bg-mintOk;
+}
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 6px;
+  left: -30px;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+.scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

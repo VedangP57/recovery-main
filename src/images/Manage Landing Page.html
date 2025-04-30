@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5502/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Landing Page</title>
+    <link rel="stylesheet" href="./Manage Landing Page_files/main.css">
+  </head>
+  <body>
+    <nav class="navbar relative container mx-auto p-6">
+      <div class="flex items-center justify-between">
+        <div class="pt-2">
+          <img src="./Manage Landing Page_files/logo.svg" alt="">
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="http://127.0.0.1:5502/index.html#" class="">Pricing</a>
+          <a href="http://127.0.0.1:5502/index.html#">Product</a>
+          <a href="http://127.0.0.1:5502/index.html#">About Us</a>
+          <a href="http://127.0.0.1:5502/index.html#">Careers</a>
+          <a href="http://127.0.0.1:5502/index.html#">Community</a>
+        </div>
+        <a href="http://127.0.0.1:5502/index.html#" class="hidden md:block p-3 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">
+          Get Start
+        </a>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <section id="hero">
+      <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+        <div class="flex flex-col mb-25 md:mb-0 space-y-12 md:w-1/2">
+          <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+            Bring everyone together to build better products
+          </h1>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <div class="flex justify-center items-center md:justify-start">
+            <a href="http://127.0.0.1:5502/index.html#" class="p-3 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">
+              Get Start
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <img src="./Manage Landing Page_files/illustration-intro.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container flex flex-col md:flex-row mt-6 items-center justify-center">
+        <div class="w-1/2">
+          <h3 class="text-4xl font-bold">What's different about Manage?</h3>
+          <p>
+            provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
+        <div class="flex flex-col w-1/2">
+          <ul>
+            <li>
+              <h3 class="text-2xl font-bold md:text-left">
+                Track company-wide progress
+              </h3>
+              <p>
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way down to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </li>
+            <li>
+              <h3>Advanced built-in reports</h3>
+              <p>
+                Set internal delivery estimates and track progress toward
+                company goals. Our customisable dashboard helps you build out
+                the reports you need to keep key stakeholders informed.
+              </p>
+            </li>
+            <li>
+              <h3>Everything you need in one place</h3>
+              <p>
+                Stop jumping from one service to another to communicate, store
+                files, track tasks and share documents. Manage offers an
+                all-in-one team productivity solution.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
