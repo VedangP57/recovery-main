@@ -3,58 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log-In</title>
-    <link rel="stylesheet" href="/src/output.css" />
+    <title>Login - Recovery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      @font-face {
+        font-family: "Figtree";
+        src: url("/Figtree/static/Figtree-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+      }
+      body {
+        background-color: #e4f2f2;
+        font-family: "Figtree", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <div class="flex space-x-4 pt-40 items-center justify-center">
-      <div class="logo w-18">
-        <img src="images/green-logo.png" class="" />
-      </div>
-      <div class="heading font-bold">
-        <a href="#" class="text-7xl font-display text-grayOk">Recovery.com</a>
-      </div>
-    </div>
+  <body class="bg-[#e4f2f2] min-h-screen flex items-center justify-center px-4">
+    <!-- Main Login Card -->
     <div
-      class="flex items-center font-mainm py-20 text-gray-900 pb-80 justify-center bg-mintOk"
+      class="w-full max-w-md bg-white p-8 rounded-xl shadow-lg border border-gray-200"
     >
-      <div class="w-full max-w-md bg-white p-8 rounded-2xl shadow-lg">
-        <h2 class="text-2xl font-bold text-grayOk text-center mb-6">
-          Login to Your Account
-        </h2>
-        <form class="space-y-4">
-          <div>
-            <label class="block text-sm font-medium text-gray-700">Email</label>
-            <input
-              type="email"
-              class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="you@example.com"
-              required
-            />
-          </div>
-          <div>
-            <label class="block text-sm font-medium text-gray-700"
-              >Password</label
-            >
-            <input
-              type="password"
-              class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="••••••••"
-              required
-            />
-          </div>
-          <button
-            type="submit"
-            class="w-full bg-mintOk text-grayOk py-2 px-4 rounded-md hover:bg- transition duration-300"
-          >
-            <a href="/src/login.html">Log In</a>
-          </button>
-        </form>
-        <p class="mt-4 text-center text-sm text-grayOk">
-          Don’t have an account?
-          <a href="#" class="text-blue-500 hover:underline">Sign up</a>
-        </p>
+      <!-- Logo and Title -->
+      <div class="flex items-center justify-center mb-10 gap-4">
+        <img
+          src="images/green-logo.png"
+          alt="Logo"
+          class="w-15 h-14 object-contain"
+        />
+        <h1 class="text-4xl font-bold text-gray-800">Recovery.com</h1>
       </div>
+
+      <!-- Login Form -->
+      <form action="submit-login.php" method="POST" class="space-y-5">
+        <div>
+          <label class="block text-sm font-medium text-gray-600 mb-1"
+            >Email</label
+          >
+          <input
+            type="email"
+            name="email"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#aad5d5]"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-600 mb-1"
+            >Password</label
+          >
+          <input
+            type="password"
+            name="password"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#aad5d5]"
+            placeholder="••••••••"
+            required
+          />
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="w-full py-2 px-4 rounded-lg bg-[#c4e4e4] text-gray-800 font-semibold hover:bg-[#aad5d5] transition duration-300"
+        >
+          Log In
+        </button>
+      </form>
+
+      <!-- Sign Up Prompt -->
+      <p class="mt-6 text-center text-sm text-gray-600">
+        Don’t have an account?
+        <a href="#" class="text-blue-500 hover:underline">Sign up</a>
+      </p>
     </div>
   </body>
 </html>
